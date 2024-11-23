@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom_UI</title>
+    <style>
+        html, body{
+        box-sizing: border-box;
+        margin: 0;padding: 0;
+        }
+      .header {
+        display: flex;
+        background-color: rgb(31, 30, 30);
+        height: 70px;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-items: center;
+      }
+      main{
+        background-color: rgb(19, 18, 18);
+        height: 84vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y: scroll;
+      }
+      ::-webkit-scrollbar{
+        display: none;
+      }
+      .profile {
+        width: 300px;
+        height: 280px;
+        background-color: rgb(27, 27, 27);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .profile:hover {
+        border: 1px solid green;
+      }
+      .controls:hover{
+        border: 1px solid red;
+      }
+      .ex:hover{
+        border: 1px solid white;
+      }
+      h3 {
+        color: white;
+
+      }
+      .name {
+        display: flex;
+        position: absolute;
+        left: 5px;
+        bottom: -10px;
+        gap: 3px;
+      }
+      .mute{
+        
+        filter: invert(18%) sepia(92%) saturate(8467%) hue-rotate(0deg) ;
+      }
+      footer{
+        background-color: rgb(14, 13, 13);
+        height: 8vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+    .ex{
+        width: 40px;
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./assets/svg/pause-svgrepo-com.svg" class="controls" alt="pause" width="45px" />
+      <img src="./assets/svg/group-svgrepo-com.svg" class="controls" alt="pause" width="45px" />
+      <img src="./assets/svg/leave-svgrepo-com.svg" class="controls" alt="pause" width="45px" />
+    </div>
+    <main>
+      <div class="profile">
+        <img src="./assets/images/virat.jpg" width="180px" alt="virat" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>Virat_Kohli</h3>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/rohit.jpg" width="180px" alt="rohit" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>Rohit_sharma</h3>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/ashwin.jpg" width="180px" alt="ashwin" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>R_Ashwin</h3>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/axar patel.jpg" width="180px" alt="axar" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>Axar_patel</h3>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/bumrah.jpg" width="180px" alt="bumrah" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>Jasprit_bumrah</h3>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/jadeja.jpg" width="180px" alt="jadeja" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>Ravindra_Jadeja</h3>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/kl rahul.jpg" width="180px" alt="kl_rahul" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>KL_Rahul</h3>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/pant.jpg" width="180px" alt="pant" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>Rishabh_Pant</h3>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/shami.jpg" width="180px" alt="shami" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>Mohammed_Shami</h3>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/shubman gill.jpg" width="180px" alt="Gill" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>Shubman_Gill</h3>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="./assets/images/siraj.jpg" width="180px" alt="siraj" />
+        <div class="name">
+          <img
+            class="mute"
+            width="25px"
+            src="./assets/svg/muted-svgrepo-com (1).svg"
+            alt="muted"
+          /><h3>Mohammed_Siraj</h3>
+        </div>
+      </div>
+    </main> 
+    <footer>
+        <img class="ex" src="./assets/svg/mic-svgrepo-com.svg" alt="">
+        <img class="ex" src="./assets/svg/record-video-multimedia-svgrepo-com.svg" alt="">
+        <img class="ex" src="./assets/svg/leave-svgrepo-com.svg" alt="">
+
+    </footer>
+  </body>
+</html>
